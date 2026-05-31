@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — AgroKaca</title>
+  <meta name="description" content="Browse AgroKaca's full range of herbicides, plant medication, and premium seeds for Albanian farmers." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="../index.html" class="nav-logo">Agro<span>Kaca</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <p class="page-header-label">Our Range</p>
+    <h1>Products for <em>Every Stage</em> of Your Crop</h1>
+    <p>Certified herbicides, targeted plant treatments, and high-quality seeds — everything your fields need, all in one place.</p>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div style="padding: 2.5rem 8% 0;">
+    <div class="filter-bar" style="padding: 0;">
+      <button class="filter-btn active" data-filter="all" onclick="filterProducts(this, 'all')">All Products</button>
+      <button class="filter-btn" data-filter="herbicide" onclick="filterProducts(this, 'herbicide')">🌿 Herbicides</button>
+      <button class="filter-btn" data-filter="medication" onclick="filterProducts(this, 'medication')">💧 Plant Medication</button>
+      <button class="filter-btn" data-filter="seeds" onclick="filterProducts(this, 'seeds')">🌾 Seeds</button>
+      <button class="filter-btn" data-filter="fertilizer" onclick="filterProducts(this, 'fertilizer')">🧪 Fertilizers</button>
+    </div>
+  </div>
+
+  <!-- HERBICIDES -->
+  <div id="herbicides" style="padding: 3rem 8% 1rem;">
+    <p class="section-label">Weed Control</p>
+    <h2 class="section-title" style="font-size: 1.8rem;">Herbicides</h2>
+    <p class="section-sub">Selective and non-selective herbicides for broadleaf weeds, grasses, and pre-emergent control.</p>
+  </div>
+
+  <div class="products-full-grid" style="padding-top: 1.5rem;">
+    <div class="product-full-card fade-up" data-category="herbicide">
+      <div class="product-img-area green">🌿</div>
+      <div class="card-body">
+        <span class="card-tag">Selective</span>
+        <h3>GraminEx 75WG</h3>
+        <p>Selective post-emergent herbicide for grass weed control in wheat and barley. Rain-fast in 1 hour.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="herbicide">
+      <div class="product-img-area green">🍃</div>
+      <div class="card-body">
+        <span class="card-tag">Broadleaf</span>
+        <h3>BroadKill 480SL</h3>
+        <p>Systemic broadleaf herbicide effective against over 40 weed species in maize and sunflower crops.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="herbicide">
+      <div class="product-img-area green">🌱</div>
+      <div class="card-body">
+        <span class="card-tag">Pre-emergent</span>
+        <h3>PreGuard 50SC</h3>
+        <p>Long-lasting pre-emergent soil herbicide for season-long weed suppression before planting.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="herbicide">
+      <div class="product-img-area green">🪴</div>
+      <div class="card-body">
+        <span class="card-tag">Non-selective</span>
+        <h3>ClearField 360G/L</h3>
+        <p>Total vegetation control for field margins, pathways, and pre-planting site clearance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLANT MEDICATION -->
+  <div id="medication" style="padding: 3rem 8% 1rem;">
+    <p class="section-label">Plant Health</p>
+    <h2 class="section-title" style="font-size: 1.8rem;">Plant Medication</h2>
+    <p class="section-sub">Fungicides, insecticides, and plant growth regulators to protect and strengthen your crops.</p>
+  </div>
+
+  <div class="products-full-grid" style="padding-top: 1.5rem;">
+    <div class="product-full-card fade-up" data-category="medication">
+      <div class="product-img-area blue">💧</div>
+      <div class="card-body">
+        <span class="card-tag">Fungicide</span>
+        <h3>FungiStop 250EC</h3>
+        <p>Broad-spectrum systemic fungicide protecting against powdery mildew, rust, and septoria in cereals.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="medication">
+      <div class="product-img-area blue">🔵</div>
+      <div class="card-body">
+        <span class="card-tag">Insecticide</span>
+        <h3>AphidEnd 200SL</h3>
+        <p>Fast-acting contact and systemic insecticide for aphid, whitefly, and thrips control.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="medication">
+      <div class="product-img-area teal">🌊</div>
+      <div class="card-body">
+        <span class="card-tag">Growth Regulator</span>
+        <h3>StrongStem CCC 750</h3>
+        <p>Plant growth regulator to reduce lodging, strengthen stems, and improve cereal harvest quality.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="medication">
+      <div class="product-img-area red">🔴</div>
+      <div class="card-body">
+        <span class="card-tag">Acaricide</span>
+        <h3>MiteAway 10WP</h3>
+        <p>Targeted miticide effective against spider mites on vegetables, fruit trees, and ornamentals.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="medication">
+      <div class="product-img-area blue">💦</div>
+      <div class="card-body">
+        <span class="card-tag">Biostimulant</span>
+        <h3>RootBoost Amino</h3>
+        <p>Amino acid-based biostimulant for enhanced root development and stress tolerance in all crops.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="medication">
+      <div class="product-img-area teal">🌀</div>
+      <div class="card-body">
+        <span class="card-tag">Fungicide</span>
+        <h3>CopperShield 35WG</h3>
+        <p>Copper-based contact fungicide and bactericide, ideal for tomatoes, peppers, and potatoes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEEDS -->
+  <div id="seeds" style="padding: 3rem 8% 1rem;">
+    <p class="section-label">Varieties</p>
+    <h2 class="section-title" style="font-size: 1.8rem;">Seeds</h2>
+    <p class="section-sub">Certified, high-germination seeds adapted for Albanian climate and soil conditions.</p>
+  </div>
+
+  <div class="products-full-grid" style="padding-top: 1.5rem;">
+    <div class="product-full-card fade-up" data-category="seeds">
+      <div class="product-img-area wheat">🌾</div>
+      <div class="card-body">
+        <span class="card-tag">Cereals</span>
+        <h3>Winter Wheat — Dajti</h3>
+        <p>High-yield certified winter wheat variety bred for Albanian highland conditions. 95%+ germination.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="seeds">
+      <div class="product-img-area wheat">🌽</div>
+      <div class="card-body">
+        <span class="card-tag">Cereals</span>
+        <h3>Hybrid Maize — ZP555</h3>
+        <p>Medium-early FAO 500 hybrid maize with excellent drought tolerance and high yield potential.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="seeds">
+      <div class="product-img-area earth">🍅</div>
+      <div class="card-body">
+        <span class="card-tag">Vegetables</span>
+        <h3>Tomato — Hybrid F1</h3>
+        <p>Indeterminate tomato hybrid with resistance to TMV, fusarium, and verticillium. Heavy fruiting.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="seeds">
+      <div class="product-img-area earth">🥒</div>
+      <div class="card-body">
+        <span class="card-tag">Vegetables</span>
+        <h3>Cucumber — Besa</h3>
+        <p>Parthenocarpic greenhouse cucumber variety. Uniform fruit, early production, disease resistant.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="seeds">
+      <div class="product-img-area wheat">🌻</div>
+      <div class="card-body">
+        <span class="card-tag">Oilseeds</span>
+        <h3>Sunflower — Helio CL</h3>
+        <p>Clearfield sunflower hybrid compatible with imidazolinone herbicides. High oil content variety.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="seeds">
+      <div class="product-img-area earth">🥬</div>
+      <div class="card-body">
+        <span class="card-tag">Vegetables</span>
+        <h3>Pepper Mix Pack</h3>
+        <p>Mixed selection of sweet and hot pepper varieties — ideal for home garden and small-scale production.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FERTILIZERS -->
+  <div id="fertilizers" style="padding: 3rem 8% 1rem;">
+    <p class="section-label">Nutrition</p>
+    <h2 class="section-title" style="font-size: 1.8rem;">Fertilizers</h2>
+    <p class="section-sub">Macro and micronutrient fertilizers for soil application and foliar feeding.</p>
+  </div>
+
+  <div class="products-full-grid" style="padding-top: 1.5rem; padding-bottom: 5rem;">
+    <div class="product-full-card fade-up" data-category="fertilizer">
+      <div class="product-img-area earth">🧪</div>
+      <div class="card-body">
+        <span class="card-tag">Granular</span>
+        <h3>NPK 15-15-15</h3>
+        <p>Balanced granular base fertilizer suitable for all crops at planting. 25kg and 50kg bags.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="fertilizer">
+      <div class="product-img-area teal">🌊</div>
+      <div class="card-body">
+        <span class="card-tag">Foliar</span>
+        <h3>FoliMax Zinc-Boron</h3>
+        <p>Micronutrient foliar spray with chelated zinc and boron to correct deficiencies and improve fruit set.</p>
+      </div>
+    </div>
+    <div class="product-full-card fade-up" data-category="fertilizer">
+      <div class="product-img-area earth">🪨</div>
+      <div class="card-body">
+        <span class="card-tag">Nitrogen</span>
+        <h3>Urea 46% N</h3>
+        <p>High-nitrogen fertilizer for top-dressing cereals and vegetables. Prilled form for easy application.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <h2>Not Sure What You Need?</h2>
+    <p>Our agronomists will help you choose the right products for your specific crop and conditions — for free.</p>
+    <a href="contact.html" class="btn-primary">Get Free Advice</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">Agro<span>Kaca</span></span>
+        <p>A family business dedicated to helping Albanian farmers grow more, spend less, and work smarter.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#herbicides">Herbicides</a></li>
+          <li><a href="#medication">Plant Medication</a></li>
+          <li><a href="#seeds">Seeds</a></li>
+          <li><a href="#fertilizers">Fertilizers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#consultation">Consultation</a></li>
+          <li><a href="services.html#soil">Soil Analysis</a></li>
+          <li><a href="services.html#planning">Crop Planning</a></li>
+          <li><a href="services.html#delivery">Delivery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Send a Message</a></li>
+          <li><a href="tel:+355">+355 XX XXX XXXX</a></li>
+          <li><a href="mailto:info@agrokaca.site">info@agrokaca.site</a></li>
+          <li><a href="#">Durrës, Albania</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 AgroKaca. All rights reserved.</span>
+      <span>Built with 🌿 in Albania</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function filterProducts(btn, category) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.product-full-card').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

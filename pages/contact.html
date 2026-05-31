@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — AgroKaca</title>
+  <meta name="description" content="Get in touch with AgroKaca for product enquiries, agricultural consultation, or to book a farm visit." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="../index.html" class="nav-logo">Agro<span>Kaca</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <p class="page-header-label">Get In Touch</p>
+    <h1>We're Here to <em>Help You Grow</em></h1>
+    <p>Questions about products, delivery, or consultation? Send us a message and we'll get back to you within one business day.</p>
+  </div>
+
+  <!-- CONTACT LAYOUT -->
+  <div class="contact-layout">
+
+    <!-- LEFT: Info -->
+    <div class="contact-info fade-up">
+      <h2>Talk to Our Team</h2>
+      <p>We're a family business based in Durrës. Whether you're a small backyard grower or running a commercial operation, we're happy to help with honest, no-pressure advice.</p>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📍</div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>Rruga Agrare, Durrës,<br>Albania</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📞</div>
+        <div>
+          <h4>Call Us</h4>
+          <p>+355 XX XXX XXXX<br><span style="font-size:0.82rem;color:var(--text-light);">Mon – Sat: 8:00 – 18:00</span></p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:info@agrokaca.site" style="color:var(--moss);text-decoration:none;">info@agrokaca.site</a></p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">⏱️</div>
+        <div>
+          <h4>Response Time</h4>
+          <p>We reply within 24 hours on business days. Urgent queries: call us directly.</p>
+        </div>
+      </div>
+
+      <!-- HOURS TABLE -->
+      <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--parchment);">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--soil); margin-bottom: 1.2rem;">Opening Hours</h3>
+        <table style="width:100%; font-size:0.875rem; border-collapse:collapse;">
+          <tr style="border-bottom: 1px solid var(--parchment);">
+            <td style="padding:8px 0; color:var(--text-mid); font-weight:500;">Monday – Friday</td>
+            <td style="padding:8px 0; color:var(--moss); text-align:right; font-weight:500;">08:00 – 18:00</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--parchment);">
+            <td style="padding:8px 0; color:var(--text-mid); font-weight:500;">Saturday</td>
+            <td style="padding:8px 0; color:var(--moss); text-align:right; font-weight:500;">08:00 – 14:00</td>
+          </tr>
+          <tr>
+            <td style="padding:8px 0; color:var(--text-light);">Sunday</td>
+            <td style="padding:8px 0; color:var(--text-light); text-align:right;">Closed</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- SOCIAL STRIP -->
+      <div style="margin-top: 2.5rem;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--soil); margin-bottom: 1.2rem;">Follow AgroKaca</h3>
+        <div style="display:flex;gap:1rem;">
+          <a href="#" style="display:flex;align-items:center;gap:8px;background:var(--parchment);padding:10px 16px;border-radius:6px;text-decoration:none;color:var(--text-mid);font-size:0.85rem;font-weight:500;transition:background 0.2s;" onmouseover="this.style.background='#e0d8c8'" onmouseout="this.style.background='var(--parchment)'">
+            📘 Facebook
+          </a>
+          <a href="#" style="display:flex;align-items:center;gap:8px;background:var(--parchment);padding:10px 16px;border-radius:6px;text-decoration:none;color:var(--text-mid);font-size:0.85rem;font-weight:500;transition:background 0.2s;" onmouseover="this.style.background='#e0d8c8'" onmouseout="this.style.background='var(--parchment)'">
+            📷 Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contact-form fade-up">
+      <h3>Send Us a Message</h3>
+      <p class="form-sub">Fill in the form below and we'll be in touch within one business day.</p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Arben" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Hoxha" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="arben@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="+355 6X XXX XXXX" />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">What can we help with?</label>
+          <select id="subject" name="subject">
+            <option value="">Select a topic…</option>
+            <option value="products">Product enquiry</option>
+            <option value="consultation">Request a consultation</option>
+            <option value="soil">Soil analysis</option>
+            <option value="delivery">Delivery question</option>
+            <option value="order">Existing order</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="crop">Your Main Crop(s) (optional)</label>
+          <input type="text" id="crop" name="crop" placeholder="e.g. Wheat, Tomatoes, Maize" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your situation, what products you're looking for, or what questions you have…" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message →</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- MAP PLACEHOLDER -->
+  <div style="background: var(--parchment); padding: 4rem 8%;">
+    <p class="section-label">Find Us</p>
+    <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 2rem;">Our <em>Location</em></h2>
+    <div style="background: var(--soil); border-radius: 12px; height: 300px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 40% 60%, rgba(61,90,42,0.4) 0%, transparent 60%), var(--bark); opacity:0.8;"></div>
+      <div style="position:relative;text-align:center;color:var(--cream);">
+        <div style="font-size:3rem;margin-bottom:1rem;">📍</div>
+        <p style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:600;">Rruga Agrare, Durrës</p>
+        <p style="font-size:0.9rem;opacity:0.7;margin-top:0.5rem;">Replace this block with a Google Maps embed for your live site</p>
+        <a href="https://maps.google.com/?q=Durres+Albania" target="_blank" rel="noopener" style="display:inline-block;margin-top:1.5rem;background:var(--wheat);color:var(--soil);padding:10px 24px;border-radius:4px;text-decoration:none;font-weight:600;font-size:0.9rem;">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section style="padding: 5rem 8%;">
+    <p class="section-label fade-up">Common Questions</p>
+    <h2 class="section-title fade-up">Quick <em>Answers</em></h2>
+
+    <div style="max-width: 720px; margin-top: 2.5rem;">
+      <details class="fade-up" style="border-bottom:1px solid var(--parchment); padding: 1.2rem 0; cursor:pointer;">
+        <summary style="font-weight:500;color:var(--soil);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Do you deliver across all of Albania?
+          <span style="color:var(--leaf);font-size:1.2rem;">+</span>
+        </summary>
+        <p style="margin-top:0.8rem;color:var(--text-light);font-size:0.9rem;line-height:1.7;">Yes. We deliver to all regions of Albania. Orders placed before 12:00 are dispatched the same day for areas near Durrës. Remote areas may take 1–2 additional days.</p>
+      </details>
+
+      <details class="fade-up" style="border-bottom:1px solid var(--parchment); padding: 1.2rem 0; cursor:pointer;">
+        <summary style="font-weight:500;color:var(--soil);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Are your products certified for use in Albania?
+          <span style="color:var(--leaf);font-size:1.2rem;">+</span>
+        </summary>
+        <p style="margin-top:0.8rem;color:var(--text-light);font-size:0.9rem;line-height:1.7;">Yes. Every product we sell holds the required Albanian plant protection registration. We only stock products that are legal, labelled, and safe for use under Albanian regulations.</p>
+      </details>
+
+      <details class="fade-up" style="border-bottom:1px solid var(--parchment); padding: 1.2rem 0; cursor:pointer;">
+        <summary style="font-weight:500;color:var(--soil);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          How long does a soil analysis take?
+          <span style="color:var(--leaf);font-size:1.2rem;">+</span>
+        </summary>
+        <p style="margin-top:0.8rem;color:var(--text-light);font-size:0.9rem;line-height:1.7;">Standard turnaround is 5–7 business days from when we receive your sample. We'll contact you as soon as results are ready and book a call to walk you through the recommendations.</p>
+      </details>
+
+      <details class="fade-up" style="border-bottom:1px solid var(--parchment); padding: 1.2rem 0; cursor:pointer;">
+        <summary style="font-weight:500;color:var(--soil);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Can I return a product I haven't used?
+          <span style="color:var(--leaf);font-size:1.2rem;">+</span>
+        </summary>
+        <p style="margin-top:0.8rem;color:var(--text-light);font-size:0.9rem;line-height:1.7;">Yes, unopened products in original packaging can be returned within 14 days of purchase. Contact us first and we'll arrange collection or you can return in-store.</p>
+      </details>
+
+      <details class="fade-up" style="padding: 1.2rem 0; cursor:pointer;">
+        <summary style="font-weight:500;color:var(--soil);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Do you work with agricultural cooperatives?
+          <span style="color:var(--leaf);font-size:1.2rem;">+</span>
+        </summary>
+        <p style="margin-top:0.8rem;color:var(--text-light);font-size:0.9rem;line-height:1.7;">Absolutely. We offer volume pricing and dedicated support for cooperatives and group buying schemes. Get in touch to discuss your needs and we'll put together a tailored proposal.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">Agro<span>Kaca</span></span>
+        <p>A family business dedicated to helping Albanian farmers grow more, spend less, and work smarter.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html#herbicides">Herbicides</a></li>
+          <li><a href="products.html#medication">Plant Medication</a></li>
+          <li><a href="products.html#seeds">Seeds</a></li>
+          <li><a href="products.html#fertilizers">Fertilizers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#consultation">Consultation</a></li>
+          <li><a href="services.html#soil">Soil Analysis</a></li>
+          <li><a href="services.html#planning">Crop Planning</a></li>
+          <li><a href="services.html#delivery">Delivery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Send a Message</a></li>
+          <li><a href="tel:+355">+355 XX XXX XXXX</a></li>
+          <li><a href="mailto:info@agrokaca.site">info@agrokaca.site</a></li>
+          <li><a href="#">Durrës, Albania</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 AgroKaca. All rights reserved.</span>
+      <span>Built with 🌿 in Albania</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
